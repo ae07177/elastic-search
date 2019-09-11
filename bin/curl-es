@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "$@"
+
+if [ -z "$@" ]
+then
+echo "Usage curl-es <data>"
+else
+/usr/bin/curl -H "Content-Type: application/json" "$@"
+fi
